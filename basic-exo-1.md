@@ -10,10 +10,10 @@ You will today keep using all yesterday's concepts, and you will also discover a
 
 ## Exercise 01
 
-**File to hand in**: `pool_java_d03/ex_01/Mars.java`
+**File to hand in**: `rendu/basic_exo_1/ex_01/Mars.java`
 
 Create a new class, named "Mars", that has an 'id' attribute, a getter (**getId**), but no setter.
-
+²
 You must create your class so that the id of the first instance of "Mars"is 0, the id of the second instance is 1...
 
 > static?!
@@ -43,7 +43,7 @@ You must create your class so that the id of the first instance of "Mars"is 0, t
 
 ## Exercise 02
 
-**File to hand in**: `pool_java_d03/ex_02/Astronaut.java`
+**File to hand in**: `rendu/basic_exo_1/ex_02/Astronaut.java`
 
 Create a new "Astronaut" class, with the following attributes:
 
@@ -92,8 +92,8 @@ Hibito ready for lunch!
 ## Exercise 03
 
 **Files to hand in**:
-1. `pool_java_d03/ex_03/chocolate/Mars.java`
-2. `pool_java_d03/ex_03/planet/Mars.java`
+1. `rendu/basic_exo_1/ex_03/chocolate/Mars.java`
+2. `rendu/basic_exo_1/ex_03/planet/Mars.java`
 
 Copy your "Mars" class from the first exercise, without changing it.
 Create another "Mars" class representing the planet.
@@ -108,7 +108,7 @@ Also add a private "size" attribute to this new "Mars" class, with a getter and 
 
 ## Exercise 04
 
-**File to hand in**: `pool_java_d03/ex_04/Astronaut.java`
+**File to hand in**: `rendu/basic_exo_1/ex_04/Astronaut.java`
 
 > In ths exercise, every time we ask for **[Name]** to be displayed, it should be replaced by the name of the Astronaut.
 For example **[Name]: Nothing to do.**
@@ -145,9 +145,9 @@ Also, if our Astronaut received a snack, you will also need to increment his "sn
 ## Exercise 05
 
 **Files to hand in**:
-1. `pool_java_d03/ex_05/planet/moon/Phobos.java`
-2. `pool_java_d03/ex_05/chocolate/Mars.java`
-3. `pool_java_d03/ex_05/planet/Mars.java`
+1. `rendu/basic_exo_1/ex_05/planet/moon/Phobos.java`
+2. `rendu/basic_exo_1/ex_05/chocolate/Mars.java`
+3. `rendu/basic_exo_1/ex_05/planet/Mars.java`
 
 Use your "Mars" classes from the previous exercises without changing it.
 Create a "Phobos" class in the "Phobos.java" file. This class must be in a "moon" namespace, which is, itself, defined in the "planet" namespace.
@@ -186,11 +186,11 @@ Phobos placed in orbit.)
 ## Exercise 06
 
 **File to hand in**:
-1. `pool_java_d03/ex_06/planet/moon/Phobos.java`
-2. `pool_java_d03/ex_06/chocolate/Mars.java`
-3. `pool_java_d03/ex_06/planet/Mars.java`
-4. `pool_java_d03/ex_06/Astronaut.java`
-5. `pool_java_d03/ex_06/Team.java`
+1. `rendu/basic_exo_1/ex_06/planet/moon/Phobos.java`
+2. `rendu/basic_exo_1/ex_06/chocolate/Mars.java`
+3. `rendu/basic_exo_1/ex_06/planet/Mars.java`
+4. `rendu/basic_exo_1/ex_06/Astronaut.java`
+5. `rendu/basic_exo_1/ex_06/Team.java`
 
 Create a new "Team" class that represents a team of astronaut.
 Its constructor must take the team name as parameter.
@@ -254,11 +254,11 @@ SpaceBrothers: Mutta on mission, Hibito on standby, Serika on standby.
 ## Exercise 07
 
 **Files to hand in**:
-1. `pool_java_d03/ex_07/planet.moon/Phobos.java`
-2. `pool_java_d03/ex_07/chocolate/Mars.java`
-3. `pool_java_d03/ex_07/planet/Mars.java`
-4. `pool_java_d03/ex_07/Astronaut.java`
-5. `pool_java_d03/ex_07/Team.java`
+1. `rendu/basic_exo_1/ex_07/planet.moon/Phobos.java`
+2. `rendu/basic_exo_1/ex_07/chocolate/Mars.java`
+3. `rendu/basic_exo_1/ex_07/planet/Mars.java`
+4. `rendu/basic_exo_1/ex_07/Astronaut.java`
+5. `rendu/basic_exo_1/ex_07/Team.java`
 
 Copy your previous exercise files.
 Add a new method to your Team, **doActions**.
