@@ -4,13 +4,13 @@ public class Mars {
 
     private int size;
 
+    public Mars( ) {
+        size = 0;
+    }
     public Mars(int size) {
         this.size = size;
     }
 
-    public Mars() {
-        size = 0;
-    }
 
     public int getSize(){
         return size;
