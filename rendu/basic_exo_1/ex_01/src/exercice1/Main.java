@@ -1,5 +1,6 @@
 package exercice1;
 
+import exercice1.planet.moon.Phobos;
 import exercice1.planet.Mars;
 
 public class Main {
@@ -8,7 +9,7 @@ public class Main {
         Astronaut neilAmstrong = new Astronaut("Neil Amstrong");
         Astronaut youriGagarine = new Astronaut("Youri Gagarine");
 
-        System.out.println(neilAmstrong.getId());
+ /**    System.out.println(neilAmstrong.getId());
         System.out.println(youriGagarine.getId());
 
         youriGagarine.doActions();
@@ -17,7 +18,12 @@ public class Main {
         youriGagarine.doActions((Mars) null);
         exercice1.chocolate.Mars snacks = new exercice1.chocolate.Mars();
         youriGagarine.doActions(snacks);
+*/
+        Mars titi = new Mars();
+        Mars toto = new Mars();
 
+        new Phobos(titi);
+        new Phobos(toto);
 
 
     }
