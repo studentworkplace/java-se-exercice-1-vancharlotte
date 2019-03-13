@@ -14,8 +14,11 @@ public class Main {
         youriGagarine.doActions();
         Mars mars = new Mars(0);
         youriGagarine.doActions(mars);
-        youriGagarine.doActions(null);
-        youriGagarine.doActions(true);
-        System.out.println(youriGagarine.getSnacks());
+        youriGagarine.doActions((Mars) null);
+        exercice1.chocolate.Mars snacks = new exercice1.chocolate.Mars();
+        youriGagarine.doActions(snacks);
+
+
+
     }
 }

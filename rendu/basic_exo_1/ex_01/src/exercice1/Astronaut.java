@@ -4,11 +4,10 @@ import exercice1.chocolate.Mars;
 
 public class Astronaut {
     private String name;
-    private int snacks;
+    private Mars snacks;
     private exercice1.planet.Mars destination;
     private int id;
     private static int counterId = 0;
-
 
     public Astronaut(String name) {
         this.name = name;
@@ -23,24 +22,27 @@ public class Astronaut {
 
     public void doActions(exercice1.planet.Mars destination) {
         this.destination = destination;
+        Mars snacks = new Mars();
+        this.snacks=snacks;
+
         if (destination == null) {
+            System.out.println(name + " : I may have done nothing, but I have " + snacks.getId() + " Mars to eat at least !");
+        }
+        else {
             System.out.println(name + " : started a mission!");
-        } else {
-            snacks++;
-            System.out.println(name + " : I may have done nothing, but I have " + snacks + " Mars to eat at least !");
+         }
+     }
+
+    public void doActions ( Mars snacks) {
+        this.snacks = snacks;
+        if(snacks==null){
+            this.destination=destination;
+            doActions(destination);
+        }
+        else {
+            System.out.println(name + " is eating mars number " + snacks.getId());
         }
     }
-
-
-    public void doActions (boolean givenSnacks) {
-        if (givenSnacks) {
-            snacks++;
-            System.out.println(name + " is eating mars number " + snacks);
-        } else {
-            this.doActions();
-        }
-    }
-
 
     public exercice1.planet.Mars getDestination() {
         return destination;
@@ -50,7 +52,7 @@ public class Astronaut {
         return id;
     }
 
-    public int getSnacks() {
+    public Mars getSnacks() {
         return snacks;
     }
 
