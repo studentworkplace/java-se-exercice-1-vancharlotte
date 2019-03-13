@@ -3,6 +3,7 @@ package exercice1;
 import exercice1.chocolate.Mars;
 
 public class Astronaut {
+
     private String name;
     private Mars snacks;
     private exercice1.planet.Mars destination;
@@ -42,6 +43,9 @@ public class Astronaut {
         else {
             System.out.println(name + " is eating mars number " + snacks.getId());
         }
+    }
+    public String getName() {
+        return name;
     }
 
     public exercice1.planet.Mars getDestination() {
