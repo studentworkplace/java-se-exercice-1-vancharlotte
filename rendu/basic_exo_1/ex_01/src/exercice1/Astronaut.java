@@ -18,14 +18,17 @@ public class Astronaut {
     }
     public void doActions(){
         System.out.println(name + " : nothing to do.");
-        snacks++;
-        System.out.println(name + " : I may have done nothing, but I have " + snacks + " Mars to eat at least !");
+
     }
 
-    public void doActions(exercice1.planet.Mars destination){
-        exercice1.planet.Mars mars = new exercice1.planet.Mars();
-        this.destination = mars;
-        System.out.println(name + " : started a mission!");
+    public void doActions(exercice1.planet.Mars destination) {
+        this.destination = destination;
+        if (destination == null) {
+            System.out.println(name + " : started a mission!");
+        } else {
+            snacks++;
+            System.out.println(name + " : I may have done nothing, but I have " + snacks + " Mars to eat at least !");
+        }
     }
 
 
