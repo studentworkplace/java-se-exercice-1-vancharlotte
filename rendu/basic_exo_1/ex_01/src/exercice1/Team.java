@@ -1,57 +1,64 @@
 package exercice1;
 
-import exercice1.planet.Mars;
+import exercice1.chocolate.Mars;
+import java.util.*;
+import java.util.stream.Stream;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-public class Team {
-
-    private String name;
-    List<Astronaut> teamMembers = new ArrayList<Astronaut>();
+public class Team extends Astronaut{
+    String name;
+    List<Object> teamMembers = new ArrayList();
     Astronaut astronaut;
+    Mars snacks;
+    Object destination;
+    String mission;
 
     public String getName() {
         return name;
     }
 
-
     public Team(String name) {
+        super(name);
         this.name = name;
+
     }
 
     /*add: It takes an Astronaut as parameter. This Astronaut should be added to the team.*/
-    public void add(Astronaut astronaut) {
-        this.teamMembers = teamMembers;
-        teamMembers.add(astronaut);
+    public void add(Object astronaut) {
+        if (astronaut instanceof Astronaut) {
+            this.teamMembers.add(astronaut);
+        } else {
+            System.out.println(name + " : Sorry, you are not part of the team.");
+
+        }
     }
 
+
     /*remove**: It takes an astronaut as parameter and removes him from the team. This function never displays anything.*/
-    public void remove(Astronaut astronaut) {
-        this.teamMembers = teamMembers;
-        teamMembers.remove(astronaut);
+    public void remove(Object astronaut) {
+        this.teamMembers.remove(astronaut);
     }
 
     /*countMembers**: It returns the number of Astronaut currently on our team.*/
     public int countMembers() {
-        this.teamMembers = teamMembers;
         return teamMembers.size();
     }
 
-    /* ShowMembers**: It displays the members that are on the team, the following way:
-     [Team name]: [Astronaut 1] on mission,[Astronaut 2] on stanby.
-     Obviously, "on mission" is displayed if the Astronaut is currently on a mission.
-     Otherwise "on standby" is displayed.
-     If no member is in the team, don't display anything.*/
-    public void showMembers() {
+    // ShowMembers**: It displays the members that are on the team and if they are currently on a mission.
+     public void showMembers() {
+        System.out.print( name + " : ");
+        for (Object astronaut : teamMembers) {
 
-         }
+            if (!(((Astronaut) astronaut).getDestination() == null)) {
+                System.out.print(((Astronaut) astronaut).getName() + " en mission, ");
+            } else {
+                System.out.print(((Astronaut) astronaut).getName() + " en standby, ");
+            }
+        }
+        System.out.print("\n");
 
+    }
 
-}
-
-
+  }
 
 
 

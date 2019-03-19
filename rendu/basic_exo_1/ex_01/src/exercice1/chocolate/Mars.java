@@ -6,7 +6,7 @@ public class Mars {
     private static int counterId = 0;
 
     public Mars(){
-        this.id = counterId++;
+        this.id = ++counterId;
     }
 
     public int getId() {
